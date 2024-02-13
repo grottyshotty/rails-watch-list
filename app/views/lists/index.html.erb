@@ -1,40 +1,8 @@
 <h1>BEST MOVIES IN THE WORLD MOTHERFUCKAAAA<h1>
 <br>
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <div class="col">
-    <div class="card">
-      <img src="https://assets.dragoart.com/images/7946_501/how-to-draw-the-grudge_5e4c8d9fa6e463.38026144_33653_3_4.jpg" class="card-img-top"  style="max-width: 400px;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Horror Movies</h5>
-        <p class="card-text">This is a list of the best horror movies ever.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="https://img.huffingtonpost.com/asset/5d947b022200003b02dc40af.jpeg?ops=scalefit_720_noupscale" class="card-img-top" style="max-width: 400px;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">War Movies</h5>
-        <p class="card-text">Best movies with things that go bang and boom</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<%= cl_image_tag("THE_IMAGE_ID_FROM_LIBRARY",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("IMAGE_WITH_FACE_ID",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
