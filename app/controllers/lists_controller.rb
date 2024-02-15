@@ -15,10 +15,15 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     if @list.save
-      redirect_to list_path(@list), :notice => "fuck you motherfucker"
+      redirect_to list_path(@list)
     else
       render :new
     end
+  end
+
+  def destroy
+    @list.destroy
+    redirect_to lists_path, status: :see_other
   end
 
   private
